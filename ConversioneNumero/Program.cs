@@ -14,7 +14,7 @@ namespace ConversioneNumero
             base2 = int.Parse(Console.ReadLine());
             Console.Write("inserisci in numero da convertire:");
             numero = int.Parse(Console.ReadLine());
-            string risultato = Convert.ToString(numero, base2);
+            string risultato = Convert.ToString(numero, base2).PadLeft(8,'0');
             Console.WriteLine($"il numero convertito è {risultato}");
 
 
